@@ -1,11 +1,11 @@
-package com.study.string.searchstring;
+package com.study.string;
 
 import java.util.Scanner;
 
-public class Main {
+public class SearchString {
     public static void main(String[] args) {
         // static 메서드에서 instance 메서드를 호출하려면 클래스 객체를 생성해야 한다
-        Main T = new Main();    //solution 메서드를 static로 생성하면 Main 클래스 객체를 생성하지 않아도 된다
+        SearchString T = new SearchString();    //solution 메서드를 static로 생성하면 Main 클래스 객체를 생성하지 않아도 된다
         Scanner kb = new Scanner(System.in);
         String str = kb.next();
 

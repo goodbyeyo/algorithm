@@ -1,4 +1,4 @@
-package com.study.string.charAt;
+package com.study.string;
 
 public class CharAt {
 
