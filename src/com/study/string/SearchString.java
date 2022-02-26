@@ -2,6 +2,15 @@ package com.study.string;
 
 import java.util.Scanner;
 
+/**
+ * 문자 찾기
+ * [설명] 한개의 문자열을 입력받고, 특정 문자를 입력받아 해당 특정문자가 입력받은 문자열에 몇개 존재하는지 알아내는 프로그램 작성
+ * [설명] 대소문자 구분하지 않음, 문자열의 길이는 100을 넘지 않는다
+ * [입력] 첫 줄에 문자열이 주어지고, 두번째 줄에 문자가 주어진다
+ * [입력] 문자열은 영어 알파벳으로만 구성되어 있다
+ * [출력] 첫 줄에 해당 문자의 개수를 출력한다
+ */
+
 public class SearchString {
     public static void main(String[] args) {
         // static 메서드에서 instance 메서드를 호출하려면 클래스 객체를 생성해야 한다
