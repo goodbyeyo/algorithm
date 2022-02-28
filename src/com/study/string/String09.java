@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class String09 {
     private static int solution(String str) {
-        // 1)
+        // 1) char 를 탐색하는 방법
 //        int answer = 0;
 //        for (char x : str.toCharArray()) {
 //            if (x >= 48 && x <= 57) {
@@ -22,14 +22,17 @@ public class String09 {
 //        }
 //        return answer;
 
-        // 2)
-        String answer = "";
-        for (char x : str.toCharArray()) {
-            if (Character.isDigit(x)) {
-                answer += x;
-            }
-        }
-        return Integer.parseInt(answer);
+        // 2) Charater.isDigit 메서드를 이용하는 방법
+//        String answer = "";
+//        for (char x : str.toCharArray()) {
+//            if (Character.isDigit(x)) {
+//                answer += x;
+//            }
+//        }
+//        return Integer.parseInt(answer);
+        
+        // 3) 정규표현식을 이용하는 방법
+        return Integer.valueOf(str.replaceAll("^0-9]", ""));
     }
 
     public static void main(String[] args) {
