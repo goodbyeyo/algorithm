@@ -8,7 +8,7 @@ package com.study.array;
 
 import java.util.Scanner;
 
-class Main {
+public class Array04 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
@@ -49,9 +49,16 @@ class Main {
     }
 
     private static void solution3(int n) {
-
+        int a = 1;
+        int b = 1;
+        int c;
+        System.out.print(a + " " + b + " ");
+        for (int i = 2; i < n; i++) {
+            c=a+b;
+            System.out.print(c + " ");
+            a = b;
+            b = c;
+        }
     }
-
-
 }
 
