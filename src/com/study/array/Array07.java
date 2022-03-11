@@ -32,12 +32,13 @@ public class Array07 {
 
     private static int solution(int cnt, int[] arr) {
         int answer = 0;
+        int count = 0;
         for (int i = 0; i < cnt; i++) {
             if (arr[i] == 1) {
-                cnt++;
-                answer += cnt;
+                count++;
+                answer += count;
             } else {
-                cnt = 0;
+                count = 0;
             }
         }
         return answer;
