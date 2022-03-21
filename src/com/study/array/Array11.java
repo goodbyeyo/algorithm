@@ -40,9 +40,9 @@ public class Array11 {
             int cnt=0;
             for (int j = 1; j < n; j++) {
                 for (int k = 1; k <= 5; k++) {  // 5학년때까지
-                    if (arr[i][k] == arr[j][k]) {
-                        cnt ++;
-                        break;
+                    if (arr[i][k] == arr[j][k]) {   // [i]번 학생의 K학년의 반과 [j]번 학생의 K학년의 반이 같은지 비교
+                        cnt ++; // 같으면 카운트 +1
+                        break;  // 한번이라도 같으면 break;
                     }
                 }
             }
