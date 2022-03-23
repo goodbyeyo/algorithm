@@ -11,7 +11,7 @@ package com.study.array;
  * 3 4 1 2
  * 4 3 2 1
  * 3 1 4 2
- * [예시 답안 ] 4
+ * [예시 답안 ] 3
  * [힌트] (3,1) (3,2) (4,2)와 같이 3가의 경우의 (멘토, 멘티) 짝을 만들 수 있다.
  */
 
@@ -31,14 +31,29 @@ public class Array12 {
         System.out.print(solution(n, m, arr));
     }
 
-    private static boolean solution(int n, int m, int[][] arr) {
+    private static int solution(int n, int m, int[][] arr) {
         int answer = 0;
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
                 int cnt = 0;
-                for (int k = 0; k < m; k++) {
+                for (int k = 0; k < m; k++) {   // 테스트 번호
                     int pi = 0;
-                    int pj = 0;                }
+                    int pj = 0;
+                    for (int s = 0; s < n; s++) {   // 등수 번호 
+                        if (arr[k][s] == i) {
+                            pi = s;
+                        }
+                        if (arr[k][s] == j) {
+                            pj = s;
+                        }
+                    }
+                    if (pi < pj) {
+                        cnt++;
+                    }
+                }
+                if (cnt == m) {
+                    answer++;
+                }
             }
         }
         return answer;
