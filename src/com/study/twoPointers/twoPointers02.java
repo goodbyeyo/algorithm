@@ -1,8 +1,8 @@
 package com.study.twoPointers;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
-import java.util.*;
 
 /**
  * A, B 두개의 집합이 주어지면 두 집합의 공통 원소를 추출하여 오름차순으로 출력하는 프로그램을 작성
@@ -19,7 +19,7 @@ import java.util.*;
  * 3 2 5 7 8
  * [출력예시] 2 3 5
  */
-public class towPointers02 {
+public class twoPointers02 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
@@ -44,7 +44,14 @@ public class towPointers02 {
         int p1 = 0;
         int p2 = 0;
         while (p1 < n && p2 < m) {
-
+            if (a[p1] == b[p2]) {
+                answer.add(a[p1++]);
+                p2++;
+            } else if (a[p1] < b[p2]) {
+                p1++;
+            } else {
+                p2++;
+            }
         }
         return answer;
     }
