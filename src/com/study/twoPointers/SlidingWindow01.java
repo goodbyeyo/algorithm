@@ -16,7 +16,7 @@ package com.study.twoPointers;
  */
 import java.util.Scanner;
 
-public class slidingWindow01 {
+public class SlidingWindow01 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();

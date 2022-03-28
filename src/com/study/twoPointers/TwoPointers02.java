@@ -19,7 +19,7 @@ import java.util.Scanner;
  * 3 2 5 7 8
  * [출력예시] 2 3 5
  */
-public class twoPointers02 {
+public class TwoPointers02 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();

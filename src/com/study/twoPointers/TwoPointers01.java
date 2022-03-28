@@ -20,7 +20,7 @@ package com.study.twoPointers;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class twoPointers01 {
+public class TwoPointers01 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
