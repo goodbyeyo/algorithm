@@ -12,13 +12,38 @@ package com.study.hash;
  * [예시]
  * 15
  * BACDBACCACCBDEDE
- * [예시답안] C
+ * [답안] C
  */
 
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class HashMap01 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        String str = in.next();
+        System.out.print(solutuon(n, str));
+
+    }
+
+    private static char solutuon(int n, String str) {
+        char answer = ' ';
+        HashMap<Character, Integer> map = new HashMap<>();
+        for (char x : str.toCharArray()) {
+            map.put(x, map.getOrDefault(x, 0) + 1);
+            // map.containsKey('key') : map 에 key가 존재하는지 ture, false 리턴
+            // map.size('key') : map에 key의 갯수를 리턴
+            // map.remove('key') : map에 key를 삭제
+        }
+        int max = Integer.MIN_VALUE;
+        for (char key : map.keySet()) {
+//            System.out.println(key);
+            if (map.get(key) > max) {
+                max = map.get(key);
+                answer = key;
+            }
+        }
+        return answer;
     }
 }
