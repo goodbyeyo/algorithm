@@ -36,7 +36,6 @@ public class HashMap02 {
             }
             map.put(x, map.get(x) - 1);
         }
-
         return answer;
     }
 }
