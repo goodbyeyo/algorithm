@@ -34,7 +34,7 @@ public class HashMap05 {
     }
 
     private static int solution(int[] arr, int n, int k) {
-        int answer = 0;
+        int answer = -1;
         TreeSet<Integer> Tset = new TreeSet<>(Collections.reverseOrder());  // 내림차순으로 자동정렬
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
@@ -44,10 +44,6 @@ public class HashMap05 {
             }
         }
         int cnt = 0;
-        // Tset.remove(143); Tset.remove : 제거
-        // Tset.size(); // 원소의 갯수 출력
-        // Tset.first(); // 오름차순 -> 최소값, 내림차순 : 최대값
-        // Test.last();  // 오름차순 -> 최대값, 내림차순 : 최소값
         for (int x : Tset) {
             cnt++;
             if (cnt == k) {
@@ -56,6 +52,10 @@ public class HashMap05 {
 //            System.out.println(cnt+"-"+x);
         }
         return answer;
+        // Tset.remove(143); Tset.remove : 제거
+        // Tset.size(); // 원소의 갯수 출력
+        // Tset.first(); // 오름차순 -> 최소값, 내림차순 : 최대값
+        // Test.last();  // 오름차순 -> 최대값, 내림차순 : 최소값값
     }
 
 }
