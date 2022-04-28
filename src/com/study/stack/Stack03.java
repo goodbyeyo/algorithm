@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Stack;
 
 /**
- *
+ * 크레인 인형뽑기(카카오)
  */
 public class Stack03 {
     public static void main(String[] args) {
