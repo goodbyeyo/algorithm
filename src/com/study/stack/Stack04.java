@@ -41,7 +41,7 @@ public class Stack04 {
             }
         }
         answer = stack.get(0);
-        
+
         return answer;
     }
 }
