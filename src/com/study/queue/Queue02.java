@@ -24,11 +24,11 @@ public class Queue02 {
         String answer = "YES";
         Queue<Character> Q = new LinkedList<>();
         for (char x : need.toCharArray()) {
-            Q.offer(x);
+            Q.offer(x); // 필수과목 세팅
         }
         for (char x : plan.toCharArray()) {
             if (Q.contains(x)) {
-                if (x != Q.poll()) {
+                if (x != Q.poll()) {    // 필수과목에서 꺼낸 값과 비교
                     return "NO";
                 }
             }
