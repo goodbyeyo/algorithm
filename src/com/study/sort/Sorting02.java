@@ -3,11 +3,8 @@ package com.study.sort;
 import java.util.Scanner;
 
 /**
- * 선택정렬
+ * 버블 정렬
  * [설명] N개의 숫자가 입력되면 오름차순으로 정렬하여 출력하는 프로그램을 작성
- * [설명] 정렬하는 방법은 선택 정렬
- * [입력] 첫번째 줄에 자연수 N(1<=N<=100)이 주어진다
- * [입력] 두번째 줄에 N개의 자연수가 공백을 사이에 두고 입력된다. 각 자연수는 정수형 범위 안에 있다
  * [출력] 오름차순으로 정렬된 수열을 출력
  * [예시 입력]
  * 6
@@ -15,7 +12,8 @@ import java.util.Scanner;
  * [예시 출력]
  * 5 7 11 13 15 23
  */
-public class Sorting01 {
+
+public class Sorting02 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
@@ -30,14 +28,12 @@ public class Sorting01 {
 
     private static int[] solution(int n, int[] arr) {
         for (int i = 0; i < n - 1; i++) {
-            int idx = i;
-            for (int j = i + 1; j < n; j++) {
-                if (arr[j] < arr[idx]) {
-                    idx = j;
+            for (int j = 0; j < n - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int tmp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = tmp;
                 }
-                int tmp = arr[i];
-                arr[i] = arr[idx];
-                arr[idx] = tmp;
             }
         }
         return arr;
