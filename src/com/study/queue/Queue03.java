@@ -31,7 +31,7 @@ public class Queue03 {
     }
 
     private static int solution(int n, int m, int[] arr) {
-        int answer = 1;
+        int answer = 0;
         Queue<Person> Q = new LinkedList<>();
         for (int i = 0; i < n; i++) {
             Q.offer(new Person(i, arr[i]));
@@ -46,15 +46,13 @@ public class Queue03 {
                 }
             }
             if (tmp != null) {
+                answer++;
                 if (tmp.id == m) {
                     return answer;
-                }else{
-                    answer++;
                 }
             }
         }
         return answer;
-
     }
 
     private static class Person {
