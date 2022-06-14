@@ -24,7 +24,7 @@ public class Storing03 {
     }
 
     private static int[] solution(int n, int[] arr) {
-        for (int i = 0; i < n; i++) {
+        for (int i = 1; i < n; i++) {
             int tmp = arr[i];
             int j = 0;
             for (j = i - 1; j >= 0; j--) {
@@ -34,6 +34,8 @@ public class Storing03 {
                     break;
                 }
             }
+            // j가 0일때 멈추면 arr[1]에 tmp를 넣고
+            // j가 0일때도 비굘로직을 통과하면 arr[0]에 tmp를 넣는다 (arr -1 + 1 = 0)
             arr[j + 1] = tmp;
         }
         return arr;
