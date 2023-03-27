@@ -3,6 +3,7 @@ package com.study.recursive;
 import java.util.Scanner;
 
 /**
+ * 재귀함수(스택프레임)
  * 자연수 N 이 입력 -> 재귀 함수를 이용 1부터 N까지 출력
  * [입력 예시] 3
  * [출력 예시] 1 2 3

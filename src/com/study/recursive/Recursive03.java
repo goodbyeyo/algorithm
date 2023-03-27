@@ -3,7 +3,7 @@ package com.study.recursive;
 import java.util.Scanner;
 
 /**
- *  Factorial
+ *  Factorial(팩토리얼)
  *  자연수 N이 입력 -> N!을 출력
  *  [입력 예시] 5
  *  [출력 예시] 120

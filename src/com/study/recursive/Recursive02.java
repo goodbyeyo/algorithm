@@ -3,6 +3,7 @@ package com.study.recursive;
 import java.util.Scanner;
 
 /**
+ * 이진수 출력(재귀)
  * 10진수 N 입력 -> 2진수로 변환하여 출력
  * [입력 예제] 11
  * [출력 예제] 1011

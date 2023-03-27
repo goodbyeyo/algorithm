@@ -3,7 +3,7 @@ package com.study.recursive;
 import java.util.Scanner;
 
 /**
- * Fibonacci numbers
+ * Fibonacci numbers(피보나치 재귀)
  * 앞의 2개의 수를 합하여 다음 숫자가 되는 수열
  * [입력 예시] 10
  * [출력 예시] 1 1 2 3 5 8 13 21 34 55
