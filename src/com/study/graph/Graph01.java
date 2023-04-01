@@ -47,7 +47,6 @@ public class Graph01 {
             }
         }
     }
-
     public static void main(String[] args) {
         Graph01 main = new Graph01();
         Scanner in = new Scanner(System.in);
